@@ -8,14 +8,16 @@ It manipulates the `margin-top` and CSS3 transitions to allow complete control o
 
 In order to detect whether to show the scroll image, it uses a separate function which binds on `$(window).scroll` which is the same as most other plugins which do the same.  If you don't want this, just make it always visible by adding the `visible` class to the `#scroll-to-top` anchor.  
 
-If you do want to use this functionality but are concerned about performance, shim a `debounce` function in between `$(window).scroll` and the target function, i've found a value of around `50` is quite usable and has the added feature of only appearing once the user slows or stops scrolling for the first time.
+If you do want to use this functionality but are concerned about performance, shim a `debounce` function in between
+`$(window).scroll` and the target function, i've found a value of around `50` milliseconds is quite usable and has the
+added feature of only appearing once the user slows or stops scrolling for the first time.
 
 ### Comparison
 
 As part of a speed comparison I did, I found it very hard to use any benchmarking to reflect the quality/smoothness
 of the animations in different browsers/hardware, so I leave it up to you to simulate.
 
-Here is a list of the scroll plugins used in the [demo](http://htmlpreview.github.com/?https://github.com/rpocklin/scroll-to-top/master/demo.html)
+Here is a list of the scroll plugins used in the [demo](http://rawgithub.com/rpocklin/scroll-to-top/master/demo.html)
 
 1. [Kryogenix](http://kryogenix.org/code/browser/smoothscroll)
 2. [TweenLite - ScrollToPlugin](http://www.greensock.com/tweenlite/)
@@ -30,6 +32,9 @@ levels, which are bound to a simple math function to keep the CPU busy.  Some br
 than others, so adjust it using the **More load** / **Less load** links at the top,
 or just hack the URL parameter `load=?`
 where _higher = more load_.
+
+The advantage of this is you can browse to your target browser (with your target hardware) and test the different
+scrollers yourself, and customise the loads to simulate your app.
 
 ### Notes
 AFAIK everything included in here is open source, if you have any issues please [contact me](mailto:rpocklin@gmail.com).
