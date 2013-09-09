@@ -1,0 +1,41 @@
+/* where to place the scroller */
+#scroll-to-top {
+
+  bottom: 40px;
+  right: 40px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("./to-top.png");
+  background-repeat: no-repeat;
+
+  float: right;
+  position: fixed;
+  z-index: 1000000;
+
+  /* for fade out */
+  transition: all 1.0s ease-in-out;
+  webkit-transition: all 1.0s ease-in-out;
+  moz-transition: all 1.0s ease-in-out;
+  o-transition: all 1.0s ease-in-out;
+  opacity: 0;
+
+}
+
+/* for fade in */
+#scroll-to-top.visible {
+  transition: all 1.0s ease-in-out;
+  webkit-transition: all 1.0s ease-in-out;
+  moz-transition: all 1.0s ease-in-out;
+  o-transition: all 1.0s ease-in-out;
+  opacity: 1;
+}
+
+/* for scrolling up */
+body.scroll-to-top {
+  transition: all 1.0s ease-out;
+  webkit-transition: all 1.0s ease-out;
+  moz-transition: all 1.0s ease-out;
+  o-transition: all 1.0s ease-out;
+}
