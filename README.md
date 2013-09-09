@@ -15,14 +15,15 @@ If you do want to use this functionality but are concerned about performance, sh
 As part of a speed comparison I did, I found it very hard to use any benchmarking to reflect the quality/smoothness
 of the animations in different browsers/hardware, so I leave it up to you to simulate.
 
-Here is a list of the scroll plugins used in the [demo](demo.html)
-1.  [Kryogenix](http://kryogenix.org/code/browser/smoothscroll)
-2.  [TweenLite - ScrollToPlugin](http://www.greensock.com/tweenlite/)
-3.  [ScrollTo](http://www.dconnell.co.uk/blog/index.php/2012/03/12/scroll-to-any-element-using-jquery/)
-4.  [ScrollUp](https://github.com/markgoodyear/scrollup)
-5.  This one.&nbsp;&nbsp;&nbsp;Obviously.
+Here is a list of the scroll plugins used in the [demo](http://htmlpreview.github.com/?https://github.com/rpocklin/scroll-to-top/master/demo.html)
 
-### [Demo](demo.html)
+1. [Kryogenix](http://kryogenix.org/code/browser/smoothscroll)
+2. [TweenLite - ScrollToPlugin](http://www.greensock.com/tweenlite/)
+3. [ScrollTo](http://www.dconnell.co.uk/blog/index.php/2012/03/12/scroll-to-any-element-using-jquery/)
+4. [ScrollUp](https://github.com/markgoodyear/scrollup)
+5. [CSS3](https://github.com/rpocklin/scroll-to-top) - this one.  Obviously.
+
+### [Demo](http://rawgithub.com/rpocklin/scroll-to-top/master/demo.html)
 
 On the demo page, you can adjust the artifical `load` created to simulate different CPU intensity
 levels, which are bound to a simple math function to keep the CPU busy.  Some browsers/hardware handle this better

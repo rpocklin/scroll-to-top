@@ -41,11 +41,12 @@
     #scroll-to-top {
       background-color: white;
       color: black;
+      bottom: 0px;
     }
 
     /* for scrollUp plugin CSS */
     #scrollUp {
-      bottom: 40px;
+      bottom: 0px;
       right: 140px;
       padding: 10px 20px;
       background: #555;
@@ -59,7 +60,7 @@
   <h2>CSS Scroller Comparison</h2>
 </div>
 
-<div id="random"></div>
+Proving Riemann Hypothesis: <span id="random"></span>
 
 <!-- Missing handlebars.js right about now -->
 <div>
@@ -2149,10 +2150,9 @@
 </div>
 
 <div id="footer">
-  <a href="#top">[ Kryogenix: http://kryogenix.org/code/browser/smoothscroll ]</a>
-  <a href="#" id="tween-scroll">[ TweenLite: http://www.greensock.com/tweenlite/ ]</a>
-  <br/><br/><a href="#" id="scroll-to">[
-    http://www.dconnell.co.uk/blog/index.php/2012/03/12/scroll-to-any-element-using-jquery/ ]</a>
+  <a href="#top">Kryogenix</a>
+  <a href="#" id="tween-scroll">TweenLite</a>
+  <a href="#" id="scroll-to">ScrollTo</a>
 
   <a id="scroll-to-top" href="#"><br/><br/>CSS3</a>
 </div>
@@ -2195,7 +2195,7 @@
       $.scrollTo($('body'));
     });
 
-    $.scrollUp({scrollText: 'ScrollUp Plugin'});
+    $.scrollUp({scrollText: 'ScrollUp'});
 
     // load up the page
     var noop = function() {
