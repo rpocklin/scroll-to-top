@@ -26,12 +26,19 @@ $(function() {
     // Apply the scroll effects
     body.css("margin-top", "0");
 
+    $('body').one('transitionend webkitAnimationEnd otransitionend MSTransitionEnd', function(e) {
+
+      if (!e.originalEvent) {return;}
+      if (e.originalEvent.propertyName == 'margin-top') {
+        body.removeClass('scroll-to-top');
+      }
+    });
+
+    // if you need to support animations where animationend events aren't triggered, use this:
     // ugly but required, or you need to listen for the transitionEnd event
-    setTimeout(function() {
-
-      body.removeClass('scroll-to-top');
-
-    }, 1000); // should match css3 transition
+    // setTimeout(function() {
+    //   body.removeClass('scroll-to-top');
+    //}, 1000); // should match css3 transition
 
   });
 });
